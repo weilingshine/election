@@ -28,7 +28,18 @@
             <article class="main-banner">
                 <script charset="utf-8" src="js/candidate.js"></script>
                 <div class="candidate" data-aos="flip-left" data-aos-delay="1500">
-                    <div class="electorate taipei show">
+                    <div class="electorate">
+                        <article class="articleBlock2 reason">
+                            <div class="article-bg">
+                                    <div class="artice-content">
+                                        <h2><span>爆點</span></h2>
+                                        <p>1111人力銀行，有鑑於少子化已成為台灣最嚴重的國安危機，特別籲請各縣市長候選人能拿出魄力，利用縣、市政府資源，幫助年輕人，鼓勵生育，紓解少子化，對台灣的衝擊，包括：鼓勵結婚、獎勵生育，育兒補貼、托兒補助、社會住宅、就業補助等福利政策，為台灣少子化提供良善的對策，鼓勵青年結婚生子。</p>
+                                        <p>1111人力銀行將每半年至一年，檢視各縣市長當選人青年政策的執行狀況，公開報告並歡迎年輕人上網留言反應意見。</p>
+                                    </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="electorate taipei">
                         <div class="candidate-txt"><span>台北</span></div>
                         <div class="candidate-people">
                             <div class="people p1"><img src="images/people/candidate-taipei01.png"></div>
@@ -98,7 +109,7 @@
                             <spn>按姓名筆劃排序</spn>
                         </div>
                     </div>
-                    <div class="electorate kaohsiung">
+                    <div class="electorate kaohsiung show">
                         <div class="candidate-txt"><span>高雄</span></div>
                         <div class="candidate-people">
                             <div class="people p1"><img src="images/people/candidate-taipei17.png"></div>
@@ -112,14 +123,14 @@
                 </div>
                 <div class="sidebar-slide">
                     <ul class="nav">
-                        <li class="nav-item"><a href="index.html" class="nav-link">緣由</a></li>
-                        <li class="nav-item"><a href="taipei.html" class="nav-link active">台北</a></li>
+                        <li class="nav-item"><a href="index.html" class="nav-link">爆點</a></li>
+                        <li class="nav-item"><a href="taipei.html" class="nav-link">台北</a></li>
                         <li class="nav-item"><a href="newTaipei.html" class="nav-link">新北</a></li>
                         <li class="nav-item"><a href="taoyuan.html" class="nav-link">桃園</a></li>
                         <li class="nav-item"><a href="hsinchu.html" class="nav-link">新竹</a></li>
                         <li class="nav-item"><a href="taichung.html" class="nav-link">台中</a></li>
                         <li class="nav-item"><a href="tainan.html" class="nav-link">台南</a></li>
-                        <li class="nav-item"><a href="kaohsiung.html" class="nav-link">高雄</a></li>
+                        <li class="nav-item"><a href="kaohsiung.html" class="nav-link active">高雄</a></li>
                     </ul>
                 </div>
             </article>
@@ -385,20 +396,17 @@
         AOS.init();
         $(function($) {
             $('.nav li').each(function(i){
-                var i = i+1;
-                var a = i-1;
                 $('.nav li').eq(i).children('a').on({
                     mouseenter: function () {
-                        $('.candidate .electorate').eq(a).addClass('show');
+                        $('.candidate .electorate').eq(i).addClass('show');
                     },
                     mouseleave: function () {
                         $('.electorate').removeClass('show');
-                        $('.candidate .electorate').eq(a).addClass('show');
+                        $('.candidate .electorate').eq(i).addClass('show');
                     }
                 });
             });
         });
     </script>
 </body>
-</html>
 </html>

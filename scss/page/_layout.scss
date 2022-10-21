@@ -292,6 +292,91 @@ main {
         }
     }
 }
+
+// article2
+.articleBlock2 {
+    width: 100%;
+    position: relative;
+    @include b1024 {
+        padding: 30px 15px;
+    }
+    .article-bg {
+        background: var(--white);
+        border-radius: 10px;
+        padding: 40px 40px;
+        max-width: 970px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 1;
+        @include b1024 {
+            padding: 20px;
+        }
+    }
+  
+    h2 {
+        margin-bottom: 20px;
+        font-size: 34px;
+        color: var(--black);
+        // text-shadow: 2px 2px 1.5px rgb(0 0 0 / 35%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include b1024 {
+            font-size: 26px;
+            margin-top: -20px;
+        }
+        @include b551 {
+            font-size: 22px;
+        }
+        &::before,&:after {
+            content: "";
+            display: inline-block;
+            width: 110px;
+            height: 2px;
+            background: var(--black);
+            margin: 0 25px;
+            @include b551 {
+                width: 35px;
+                margin: 0 15px;
+            }
+        }
+        span {
+            display: inline-block;
+            letter-spacing: 15px;
+            margin-right: -15px;
+            @include b551 {
+                letter-spacing: 10px;
+                margin-right: -10px;
+            }
+        }
+    }
+    .artice-content {
+        font-size: 18px;
+        line-height: 1.4;
+        color: var(--gray-5);
+        font-weight: 500;
+        @include b1024 {
+            padding-top: 40px;
+
+        }
+        @include b991 {
+            font-size: 16px;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+    }
+}
+.articleBlock2.reason h2 span{
+    @include b551 {
+        letter-spacing: 10px;
+        margin-right: -10px;
+    }
+    
+
+}
+
+
 .give-birth,.social-housing {
     overflow: inherit;
 }

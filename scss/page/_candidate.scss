@@ -1,3 +1,25 @@
+// 爆點
+.info {
+    display: flex;
+    opacity: 1;
+    max-width: 970px;
+    .candidate-people {
+        @include b1024 {
+            margin-top: 0;
+        }
+        .p1 {
+            margin-right: 2.5%;
+            width: 29.89%;
+        }
+        .p2 {
+            width: 29.89%;
+            margin-right: 1.64%;
+        }
+        .p3 {
+            width: 34%;
+        }
+    }
+}
 // 台北
 .taipei {
     display: flex;
