@@ -4,58 +4,56 @@
     opacity: 1;
     max-width: 970px;
     .candidate-people {
-        margin-top: -4%;
         @include b1024 {
             margin-top: 0;
         }
-        .p1,.p3 {
-            max-width: 290px;
-            padding-bottom: 25px;
-            @include b1024 {
-                max-width: none;
-                width: 33%;
-            }
+        .p1 {
+            margin-right: 2.5%;
+            width: 29.89%;
         }
         .p2 {
-            max-width: 330px;
-            margin-right: -40px;
-            @include b1024 {
-                margin-right: -4%;
-                max-width: none;
-                width: 38%
-            }
+            width: 29.89%;
+            margin-right: 1.64%;
+        }
+        .p3 {
+            width: 34%;
         }
     }
 }
 // 新北
 .new-taipei {
-    max-width: 770px;
+    max-width: 970px;
     .candidate-people {
-        .p1,.p2 {
-            max-width: 335px;
-            @include b1024 {
-                max-width: none;
-                width: 48%;
-            }
+        .p1 {
+            margin-left: 6%;
+            width: 38%;
+        }
+        .p2 {
+            margin-right: 10%;
+            width: 38%;
         }
     }
 }
 // 桃園
 .taoyuan {
-    max-width: 780px;
+    max-width: 970px;
     .candidate-people {
         .p1 {
-            max-width: 350px;
+            width: 34.6%;
             @include b1024 {
                 max-width: none;
-                width: 50%;
             }
         }
         .p2 {
-            max-width: 335px;
+            width: 33.6%;
             @include b1024 {
                 max-width: none;
-                width: 47%;
+            }
+        }
+        .p3 {
+            width: 32.6%;
+            @include b1024 {
+                max-width: none;
             }
         }
     }
@@ -64,37 +62,40 @@
 .hsinchu {
     max-width: 970px;
     .candidate-people {
-        margin-top: -4%;
         @include b1024 {
             margin-top: 0;
         }
-        .p1,.p3 {
-            max-width: 295px;
-            padding-bottom: 89px;
+         .p1 {
+            width: 34.6%;
             @include b1024 {
                 max-width: none;
-                width: 32%;
             }
         }
         .p2 {
-            max-width: 295px;
+            width: 33.6%;
             @include b1024 {
                 max-width: none;
-                width: 32%
+            }
+        }
+        .p3 {
+            width: 32.6%;
+            @include b1024 {
+                max-width: none;
             }
         }
     }
 }
 // 台中
 .taichung {
-    max-width: 770px;
+    max-width: 970px;
     .candidate-people {
-        .p1,.p2 {
-            max-width: 335px;
-            @include b1024 {
-                max-width: none;
-                width: 48%;
-            }
+        .p1 {
+            margin-left: 6%;
+            width: 38%;
+        }
+        .p2 {
+            margin-right: 10%;
+            width: 38%;
         }
     }
 }
@@ -102,34 +103,43 @@
 .tainan {
     max-width: 970px;
     .candidate-people {
-        .p1,.p3 {
-            max-width: 280px;
-            padding-bottom: 70px;
+        @include b1024 {
+            margin-top: 0;
+        }
+         .p1 {
+            padding-bottom: 12px;
+            width: 34.6%;
             @include b1024 {
                 max-width: none;
-                width: 32%;
-                padding-bottom: 25px;
             }
         }
         .p2 {
-            max-width: 280px;
+            width: 33.6%;
             @include b1024 {
                 max-width: none;
-                width: 32%
+            }
+        }
+        .p3 {
+            width: 32.6%;
+            @include b1024 {
+                max-width: none;
             }
         }
     }
 }
 // 高雄
 .kaohsiung {
-    max-width: 770px;
+    max-width: 970px;
     .candidate-people {
-        .p1,.p2 {
-            max-width: 335px;
-            @include b1024 {
-                max-width: none;
-                width: 48%;
-            }
+        .p1 {
+            margin-left: 6%;
+            width: 35%;
+            padding-bottom: 9px;
+        }
+        .p2 {
+            margin-right: 10%;
+            padding-bottom: 9px;
+            width: 35%;
         }
     }
 }
