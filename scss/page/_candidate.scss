@@ -1,0 +1,135 @@
+// 台北
+.taipei {
+    display: flex;
+    opacity: 1;
+    max-width: 970px;
+    .candidate-people {
+        margin-top: -4%;
+        @include b1024 {
+            margin-top: 0;
+        }
+        .p1,.p3 {
+            max-width: 290px;
+            padding-bottom: 25px;
+            @include b1024 {
+                max-width: none;
+                width: 33%;
+            }
+        }
+        .p2 {
+            max-width: 330px;
+            margin-right: -40px;
+            @include b1024 {
+                margin-right: -4%;
+                max-width: none;
+                width: 38%
+            }
+        }
+    }
+}
+// 新北
+.new-taipei {
+    max-width: 770px;
+    .candidate-people {
+        .p1,.p2 {
+            max-width: 335px;
+            @include b1024 {
+                max-width: none;
+                width: 48%;
+            }
+        }
+    }
+}
+// 桃園
+.taoyuan {
+    max-width: 780px;
+    .candidate-people {
+        .p1 {
+            max-width: 350px;
+            @include b1024 {
+                max-width: none;
+                width: 50%;
+            }
+        }
+        .p2 {
+            max-width: 335px;
+            @include b1024 {
+                max-width: none;
+                width: 47%;
+            }
+        }
+    }
+}
+// 新竹
+.hsinchu {
+    max-width: 970px;
+    .candidate-people {
+        margin-top: -4%;
+        @include b1024 {
+            margin-top: 0;
+        }
+        .p1,.p3 {
+            max-width: 295px;
+            padding-bottom: 89px;
+            @include b1024 {
+                max-width: none;
+                width: 32%;
+            }
+        }
+        .p2 {
+            max-width: 295px;
+            @include b1024 {
+                max-width: none;
+                width: 32%
+            }
+        }
+    }
+}
+// 台中
+.taichung {
+    max-width: 770px;
+    .candidate-people {
+        .p1,.p2 {
+            max-width: 335px;
+            @include b1024 {
+                max-width: none;
+                width: 48%;
+            }
+        }
+    }
+}
+// 台南
+.tainan {
+    max-width: 970px;
+    .candidate-people {
+        .p1,.p3 {
+            max-width: 280px;
+            padding-bottom: 70px;
+            @include b1024 {
+                max-width: none;
+                width: 32%;
+                padding-bottom: 25px;
+            }
+        }
+        .p2 {
+            max-width: 280px;
+            @include b1024 {
+                max-width: none;
+                width: 32%
+            }
+        }
+    }
+}
+// 高雄
+.kaohsiung {
+    max-width: 770px;
+    .candidate-people {
+        .p1,.p2 {
+            max-width: 335px;
+            @include b1024 {
+                max-width: none;
+                width: 48%;
+            }
+        }
+    }
+}
