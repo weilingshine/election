@@ -26,7 +26,7 @@
     <!--header-->
     <!-- <script charset="utf-8" src="js/header.js?v=202210171529"></script> -->
     <main id="homepage">
-        <div class="container" style="background: #7DC8C1; height: 100vh;">
+        <div class="container" style="background: #7DC8C1;">
             <!--candidate-->
             <article class="main-banner">
                 <script charset="utf-8" src="js/candidate.js"></script>
@@ -144,19 +144,6 @@
     <script src="vendor/aos/aos.js"></script>
     <script>
         AOS.init();
-        $(function($) {
-            $('.nav li').each(function(i){
-                $('.nav li').eq(i).children('a').on({
-                    mouseenter: function () {
-                        $('.candidate .electorate').eq(i).addClass('show');
-                    },
-                    mouseleave: function () {
-                        $('.electorate').removeClass('show');
-                        $('.candidate .electorate').eq(i).addClass('show');
-                    }
-                });
-            });
-        });
     </script>
 </body>
 </html>

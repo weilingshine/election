@@ -394,19 +394,6 @@
     <script src="vendor/aos/aos.js"></script>
     <script>
         AOS.init();
-        $(function($) {
-            $('.nav li').each(function(i){
-                $('.nav li').eq(i).children('a').on({
-                    mouseenter: function () {
-                        $('.candidate .electorate').eq(i).addClass('show');
-                    },
-                    mouseleave: function () {
-                        $('.electorate').removeClass('show');
-                        $('.candidate .electorate').eq(i).addClass('show');
-                    }
-                });
-            });
-        });
     </script>
 </body>
 </html>
